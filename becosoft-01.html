@@ -1,408 +1,563 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>*|MC:SUBJECT|*</title>
-    
-  <style type="text/css">
-		body{
-			margin:0;
-			padding:0;
-			background-color:#f6f9fc;
-			font-family:"Roboto",sans-serif;
-		}
-		table{
-			border-spacing:0;
-		}
-		td{
-			padding:0;
-		}
-		img{
-			border:0;
-		}
-		h1{
-			margin:0;
-		}
-		.wrapper{
-			width:100%;
-			table-layout:fixed;
-			background-color:#f6f9fc;
-			padding-bottom:40px;
-		}
-		.webkit{
-			max-width:600px;
-			background-color:#fff;
-		}
-		a{
-			text-decoration:none;
-			color:#000000;
-		}
-		.hero-column img{
-			width:100%;
-			max-width:400px;
-			height:auto;
-		}
-		.one-column{
-			text-align:left;
-			font-size:0;
-		}
-		.one-column .contents{
-			padding-left:15px;
-			padding-right:15px;
-		}
-		.one-column .contents p{
-			font-size:15px;
-			margin-bottom:10px;
-			color:#000000;
-			line-height:25px;
-		}
-		.one-column p.h1{
-			font-size:35px;
-			font-family:"Roboto",sans-serif;
-			font-weight:bold;
-			line-height:45px;
-		}
-		.two-column{
-			text-align:center;
-			font-size:0;
-		}
-		.two-column .column{
-			width:100%;
-			max-width:300px;
-			display:inline-block;
-			vertical-align:middle;
-		}
-		.contents{
-			width:100%;
-		}
-		.two-column .contents.left{
-			font-size:14px;
-			text-align:left;
-			padding-left:15px;
-		}
-		.two-column .contents.right{
-			font-size:14px;
-			text-align:right;
-			padding-right:15px;
-		}
-		.two-column img{
-			width:100%;
-			max-width:280px;
-			height:auto;
-		}
-		.two-column .text{
-			padding-top:10px;
-		}
-		.three-columns{
-			text-align:center;
-			padding-top:30px;
-			padding-bottom:40px;
-			background-color:#f6f9fc;
-		}
-		.three-columns .column{
-			width:100%;
-			max-width:350px;
-			display:inline-block;
-			vertical-align:top;
-		}
-		.padding{
-			padding:15px;
-		}
-		.three-columns .contents{
-			font-size:15px;
-			line-height:24px;
-		}
-		.contents p{
-			font-size:14px;
-			font-family:"Roboto",sans-serif;
-			color:#000000;
-		}
-	@media only screen and (max-width: 600px){
-		.two-column .contents.left{
-			text-align:center !important;
-			padding-left:0 !important;
-		}
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>*|MC:SUBJECT|*</title>
 
-}	@media only screen and (max-width: 600px){
-		.two-column .contents.right{
-			font-size:14px;
-			text-align:center !important;
-			padding-right:0 !important;
-		}
-
-}	@media only screen and (max-width: 480px){
-		.hero-column img{
-			width:100%;
-			max-width:400px !important;
-			height:auto;
-		}
-
-}	@media only screen and (max-width: 400px){
-		.hero-column img{
-			width:100%;
-			max-width:350px !important;
-			height:auto;
-		}
-
-}	@media only screen and (max-width: 320px){
-		.hero-column img{
-			width:100%;
-			max-width:300px !important;
-			height:auto;
-		}
-
-}</style></head>
-  <body>
-    <center class="wrapper">
-      <div class="webkit">
-        <table class="outer" align="center">
-          <tr>
-            <td>
-              <table width="100%" style="border-spacing:0;">
-                <!-- logo START  -->
-                <tr>
-                  <td>
-                    <table width="100%" style="border-spacing:0;">
-                      <tr>
-                        <td class="two-column">
-                          <!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #f6f9fc;
+				font-family: "Roboto", sans-serif;
+			}
+			table {
+				border-spacing: 0;
+			}
+			td {
+				padding: 0;
+			}
+			img {
+				border: 0;
+			}
+			h1 {
+				margin: 0;
+			}
+			.wrapper {
+				width: 100%;
+				table-layout: fixed;
+				background-color: #f6f9fc;
+				padding-bottom: 40px;
+			}
+			.webkit {
+				max-width: 600px;
+				background-color: #fff;
+			}
+			a {
+				text-decoration: none;
+				color: #000000;
+			}
+			.hero-column img {
+				width: 100%;
+				max-width: 400px;
+				height: auto;
+			}
+			.one-column {
+				text-align: left;
+				font-size: 0;
+			}
+			.one-column .contents {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.one-column .contents p {
+				font-size: 15px;
+				margin-bottom: 10px;
+				color: #000000;
+				line-height: 25px;
+			}
+			.one-column p.h1 {
+				font-size: 35px;
+				font-family: "Roboto", sans-serif;
+				font-weight: bold;
+				line-height: 45px;
+			}
+			.two-column {
+				text-align: center;
+				font-size: 0;
+			}
+			.two-column .column {
+				width: 100%;
+				max-width: 300px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.contents {
+				width: 100%;
+			}
+			.two-column .contents.left {
+				font-size: 14px;
+				text-align: left;
+				padding-left: 15px;
+			}
+			.two-column .contents.right {
+				font-size: 14px;
+				text-align: right;
+				padding-right: 15px;
+			}
+			.two-column img {
+				width: 100%;
+				max-width: 280px;
+				height: auto;
+			}
+			.two-column .text {
+				padding-top: 10px;
+			}
+			.three-columns {
+				text-align: center;
+				padding-top: 30px;
+				padding-bottom: 40px;
+				background-color: #f6f9fc;
+			}
+			.three-columns .column {
+				width: 100%;
+				max-width: 350px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.padding {
+				padding: 15px;
+			}
+			.three-columns .contents {
+				font-size: 15px;
+				line-height: 24px;
+			}
+			.contents p {
+				font-size: 14px;
+				font-family: "Roboto", sans-serif;
+				color: #000000;
+			}
+			@media only screen and (max-width: 600px) {
+				.two-column .contents.left {
+					text-align: center !important;
+					padding-left: 0 !important;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				.two-column .contents.right {
+					font-size: 14px;
+					text-align: center !important;
+					padding-right: 0 !important;
+				}
+			}
+			@media only screen and (max-width: 480px) {
+				.hero-column img {
+					width: 100%;
+					max-width: 400px !important;
+					height: auto;
+				}
+			}
+			@media only screen and (max-width: 400px) {
+				.hero-column img {
+					width: 100%;
+					max-width: 350px !important;
+					height: auto;
+				}
+			}
+			@media only screen and (max-width: 320px) {
+				.hero-column img {
+					width: 100%;
+					max-width: 300px !important;
+					height: auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<center class="wrapper">
+			<div class="webkit">
+				<table class="outer" align="center">
+					<tr>
+						<td>
+							<table width="100%" style="border-spacing: 0">
+								<!-- logo START  -->
+								<tr>
+									<td>
+										<table
+											width="100%"
+											style="border-spacing: 0"
+										>
+											<tr>
+												<td class="two-column">
+													<!--[if (gte mso 9)|(IE)]>
                           <table width="100%">
                             <tr>
                               <td width="50%" valign="top">
                                 <![endif]-->
-                          <!-- column 1/2  -->
-                          <div class="column">
-                            <table width="100%">
-                              <tr>
-                                <td class="inner">
-                                  <table class="contents left">
-                                    <tr>
-                                      <td>
-                                        <img mc:edit="headerlogo" src="https://i.ibb.co/x6xJNWZ/Screenshot-2.png" alt="logo" width="300">
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-                          <!--[if (gte mso 9)|(IE)]>
+													<!-- column 1/2  -->
+													<div class="column">
+														<table width="100%">
+															<tr>
+																<td
+																	class="inner"
+																>
+																	<table
+																		class="contents left"
+																	>
+																		<tr>
+																			<td>
+																				<img
+																					mc:edit="headerlogo"
+																					src="./images/logo.svg"
+																					alt="logo"
+																					width="300"
+																				/>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</div>
+													<!--[if (gte mso 9)|(IE)]>
                         </td>
                         <td width="50%" valign="top">
                           <![endif]-->
-                          <!-- column 2/2 -->
-                          <div class="column">
-                            <table width="100%">
-                              <tr>
-                                <td class="inner">
-                                  <table class="contents right">
-                                    <tr>
-                                      <td class="text">
-                                        <div mc:edit="headertext" style="font-family:Roboto, sans-serif;color:#000000;font-weight:bold;font-size:15px;">ICT.anywhere.anytime</div>
-                                        
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </div>
-                          <!--[if (gte mso 9)|(IE)]>
+													<!-- column 2/2 -->
+													<div class="column">
+														<table width="100%">
+															<tr>
+																<td
+																	class="inner"
+																>
+																	<table
+																		class="contents right"
+																	>
+																		<tr>
+																			<td
+																				class="text"
+																			>
+																				<div
+																					mc:edit="headertext"
+																					style="
+																						font-family: Roboto,
+																							sans-serif;
+																						color: #000000;
+																						font-weight: bold;
+																						font-size: 15px;
+																					"
+																				>
+																					ICT.anywhere.anytime
+																				</div>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</div>
+													<!--[if (gte mso 9)|(IE)]>
                         </td>
                       </tr>
                     </table>
                     <![endif]-->
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- logo END  -->
-                <!-- hero banner 1 START  -->
-                <tr>
-                  <td class="hero-column">
-                    <br>
-                    <br>
-                    <br><a href="#">
-                    <img mc:edit="heroimage01" src="https://i.ibb.co/N1qY51t/Screenshot-1.png" alt="banner" title="Banner" width="600" style="max-width: 100%;"></a>
-                  </td>
-                </tr>
-                <!-- hero banner 1 END   -->
-                <!-- main body  start -->
-                <tr>
-                  <td class="one-column" mc:edit="mainbodytext">
-                    <table width="100%">
-                      <tr>
-                        <td class="inner contents">
-                          <p class="h1">
-                            Software update <br>
-                            Becosoft / Transsmart
-                            integratie
-                          </p>
-                          <p>
-                          Beste, <br>
-                          <br>
-                          De laatste tijd krijgen
-                          we meer en meer vragen
-                          om vervoerders aan te
-                          sluiten op onze nieuwe
-                          logistieke module.
-                          <br>
-                          <br>
-                          We zijn dan ook heel
-                          blij te kunnen
-                          aankondigen dat de
-                          nieuwe logistieke module
-                          van Becosoft Fashion Pro
-                          vanaf heden integreert
-                          met het cloudplatform
-                          van Transsmart. Hierdoor
-                          kunnen we vanaf heden
-                          koppelen met meer dan
-                          400 verschillende
-                          vervoerders. <br>
-                          <br>
-                          Transsmart is
-                          leverancier van
-                          cloudgebaseerde
-                          verzendsoftware. Met de
-                          shipping en delivery
-                          management-oplossingen
-                          maakt Transsmart de
-                          logistieke verbinding
-                          tussen webshop,
-                          magazijn, vervoerders en
-                          klanten. Het systeem is
-                          naadloos geïntegreerd
-                          met dan 400 vervoerders
-                          in 150 landen
-                          wereldwijd.
-                          <br>
-                          <br>
-                          <br>
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <!-- hero banner 2 START  -->
-              <tr>
-                <td class="hero-column">
-                  <a href="#">
-                    <img mc:edit="heroimage02" src="https://i.ibb.co/zXZP9s3/Rectangle-31.png" alt="banner" title="Banner" width="600" style="max-width: 100%;"></a>
-                  </td>
-                </tr>
-                <!-- hero banner 2 END   -->
-                <tr>
-                  <td class="one-column">
-                    <table width="100%">
-                      <tr>
-                        <td class="inner contents">
-                          <p mc:edit="mainbodytext02">
-                            <br>
-                            Met Transsmart's
-                            software optimaliseert u
-                            uw verzendproces: het
-                            gehele logistieke proces
-                            van aankoop tot en met
-                            aflevering sneller,
-                            inzichtelijker,
-                            flexibeler én goedkoper.
-                            <br>
-                            <br>
-                            Heeft u vragen over deze
-                            nieuwe integratie?
-                            Contacteer ons op
-                            info@becosoft.com .
-                            <br>
-                            <br>
-                            Met vriendelijke
-                            groeten, <br>
-                            <br>
-                            Isabelle Mestdagh <br>
-                            Account Manager
-                            <br>
-                            <br>
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- main body button  -->
-                <tr>
-                  <td class="one-column">
-                    <table width="100%">
-                      <tr>
-                        <td class="inner contents">
-                          <p>
-                          <a mc:edit="mcbutton" href="#" style="color:#fff;display:inline-block;padding-top:15px;padding-bottom:15px;padding-left:25px;padding-right:25px;border-radius:5px;background-color:#e10d39;">Ontdek deze nieuwe feature</a>
-                          <br>
-                          <br>
-                          <br>
-                          <br>
-                        </p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-              <!-- main body end  -->
-              <!-- three colomn  -->
-              <tr>
-                <td>
-                  <table width="100%" style="border-spacing:0;">
-                    <tr>
-                      <td class="three-columns" mc:edit="footertext">
-                        <!-- column 1/3  -->
-                        <table class="column">
-                          <tbody>
-                            <tr style="width:100%;">
-                              <td class="padding">
-                                <table class="contents">
-                                  <tbody>
-                                    <tr>
-                                      <td>
-                                        <div>
-                                          <p style="color:#000000;font-weight:bold;font-family:Roboto, sans-serif;font-size:18px;text-transform:uppercase;">© BECOSOFT Bv</p>
-                                          <p>Kapelanielaan 8, 9140 Temse (België)</p>
-                                          <a href="">www.becosoft.com</a>
-                                          <br>
-                                          <br><a href="">Unsubscribe</a> •
-                                          <a href="">Update profile</a> •
-                                            <a href="">Privacy Policy</a>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br><a href=""><img alt="image" src="https://i.ibb.co/x6xJNWZ/Screenshot-2.png" style="max-width: 200px;" width="200"></a>
-                                            <br>
-                                            <br>
-                                            <br><a href="#"><img alt="" src="https://i.ibb.co/JnWGRgw/linkedin2x.png" style="max-width: 40px;" width="40"></a>
-                                            <a href="#"><img alt="" src="https://i.ibb.co/V9hM6GL/facebook2x.png" style="max-width: 40px;" width="40"></a>
-                                            <a href="#"><img alt="" src="https://i.ibb.co/0hsqcvm/twitter2x.png" style="max-width: 40px;" width="40"></a>
-                                            <a href="#"><img alt="" src="https://i.ibb.co/R2KcJ58/pinterest2x.png" style="max-width: 40px;" width="40"></a>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </center>
-  </body>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- logo END  -->
+								<!-- hero banner 1 START  -->
+								<tr>
+									<td class="hero-column">
+										<br />
+										<br />
+										<br /><a href="#">
+											<img
+												mc:edit="heroimage01"
+												src="https://i.ibb.co/N1qY51t/Screenshot-1.png"
+												alt="banner"
+												title="Banner"
+												width="600"
+												style="max-width: 100%"
+										/></a>
+									</td>
+								</tr>
+								<!-- hero banner 1 END   -->
+								<!-- main body  start -->
+								<tr>
+									<td
+										class="one-column"
+										mc:edit="mainbodytext"
+									>
+										<table width="100%">
+											<tr>
+												<td class="inner contents">
+													<p class="h1">
+														Software update <br />
+														Becosoft / Transsmart
+														integratie
+													</p>
+													<p>
+														Beste, <br />
+														<br />
+														De laatste tijd krijgen
+														we meer en meer vragen
+														om vervoerders aan te
+														sluiten op onze nieuwe
+														logistieke module.
+														<br />
+														<br />
+														We zijn dan ook heel
+														blij te kunnen
+														aankondigen dat de
+														nieuwe logistieke module
+														van Becosoft Fashion Pro
+														vanaf heden integreert
+														met het cloudplatform
+														van Transsmart. Hierdoor
+														kunnen we vanaf heden
+														koppelen met meer dan
+														400 verschillende
+														vervoerders. <br />
+														<br />
+														Transsmart is
+														leverancier van
+														cloudgebaseerde
+														verzendsoftware. Met de
+														shipping en delivery
+														management-oplossingen
+														maakt Transsmart de
+														logistieke verbinding
+														tussen webshop,
+														magazijn, vervoerders en
+														klanten. Het systeem is
+														naadloos geïntegreerd
+														met dan 400 vervoerders
+														in 150 landen
+														wereldwijd.
+														<br />
+														<br />
+														<br />
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- hero banner 2 START  -->
+								<tr>
+									<td class="hero-column">
+										<a href="#">
+											<img
+												mc:edit="heroimage02"
+												src="https://i.ibb.co/zXZP9s3/Rectangle-31.png"
+												alt="banner"
+												title="Banner"
+												width="600"
+												style="max-width: 100%"
+										/></a>
+									</td>
+								</tr>
+								<!-- hero banner 2 END   -->
+								<tr>
+									<td class="one-column">
+										<table width="100%">
+											<tr>
+												<td class="inner contents">
+													<p mc:edit="mainbodytext02">
+														<br />
+														Met Transsmart's
+														software optimaliseert u
+														uw verzendproces: het
+														gehele logistieke proces
+														van aankoop tot en met
+														aflevering sneller,
+														inzichtelijker,
+														flexibeler én goedkoper.
+														<br />
+														<br />
+														Heeft u vragen over deze
+														nieuwe integratie?
+														Contacteer ons op
+														info@becosoft.com .
+														<br />
+														<br />
+														Met vriendelijke
+														groeten, <br />
+														<br />
+														Isabelle Mestdagh <br />
+														Account Manager
+														<br />
+														<br />
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- main body button  -->
+								<tr>
+									<td class="one-column">
+										<table width="100%">
+											<tr>
+												<td class="inner contents">
+													<p>
+														<a
+															mc:edit="mcbutton"
+															href="#"
+															style="
+																color: #fff;
+																display: inline-block;
+																padding-top: 15px;
+																padding-bottom: 15px;
+																padding-left: 25px;
+																padding-right: 25px;
+																border-radius: 5px;
+																background-color: #e10d39;
+															"
+															>Ontdek deze nieuwe
+															feature</a
+														>
+														<br />
+														<br />
+														<br />
+														<br />
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- main body end  -->
+								<!-- three colomn  -->
+								<tr>
+									<td>
+										<table
+											width="100%"
+											style="border-spacing: 0"
+										>
+											<tr>
+												<td
+													class="three-columns"
+													mc:edit="footertext"
+												>
+													<!-- column 1/3  -->
+													<table class="column">
+														<tbody>
+															<tr
+																style="
+																	width: 100%;
+																"
+															>
+																<td
+																	class="padding"
+																>
+																	<table
+																		class="contents"
+																	>
+																		<tbody>
+																			<tr>
+																				<td>
+																					<div>
+																						<p
+																							style="
+																								color: #000000;
+																								font-weight: bold;
+																								font-family: Roboto,
+																									sans-serif;
+																								font-size: 18px;
+																								text-transform: uppercase;
+																							"
+																						>
+																							©
+																							BECOSOFT
+																							Bv
+																						</p>
+																						<p>
+																							Kapelanielaan
+																							8,
+																							9140
+																							Temse
+																							(België)
+																						</p>
+																						<a
+																							href=""
+																							>www.becosoft.com</a
+																						>
+																						<br />
+																						<br /><a
+																							href=""
+																							>Unsubscribe</a
+																						>
+																						•
+																						<a
+																							href=""
+																							>Update
+																							profile</a
+																						>
+																						•
+																						<a
+																							href=""
+																							>Privacy
+																							Policy</a
+																						>
+																						<br />
+																						<br />
+																						<br />
+																						<br /><a
+																							href=""
+																							><img
+																								alt="image"
+																								src="./images/logo.svg"
+																								style="
+																									max-width: 200px;
+																								"
+																								width="200"
+																						/></a>
+																						<br />
+																						<br />
+																						<br /><a
+																							href="#"
+																							><img
+																								alt=""
+																								src="https://i.ibb.co/JnWGRgw/linkedin2x.png"
+																								style="
+																									max-width: 40px;
+																								"
+																								width="40"
+																						/></a>
+																						<a
+																							href="#"
+																							><img
+																								alt=""
+																								src="https://i.ibb.co/V9hM6GL/facebook2x.png"
+																								style="
+																									max-width: 40px;
+																								"
+																								width="40"
+																						/></a>
+																						<a
+																							href="#"
+																							><img
+																								alt=""
+																								src="https://i.ibb.co/0hsqcvm/twitter2x.png"
+																								style="
+																									max-width: 40px;
+																								"
+																								width="40"
+																						/></a>
+																						<a
+																							href="#"
+																							><img
+																								alt=""
+																								src="https://i.ibb.co/R2KcJ58/pinterest2x.png"
+																								style="
+																									max-width: 40px;
+																								"
+																								width="40"
+																						/></a>
+																					</div>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</center>
+	</body>
 </html>
